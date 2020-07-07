@@ -42,7 +42,7 @@ def play(songs)
 
   elsif users_input.is_a? String && song_name.include? users_input
     puts "Playing #{users_input}"
-  end
+  
   else
     puts "Invalid input, please try again"
   end
