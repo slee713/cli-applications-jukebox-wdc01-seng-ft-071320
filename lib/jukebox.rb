@@ -33,4 +33,4 @@ def play(songs)
     song_number+= (index+1)
   end
   binding.pry
-  if users_input.class == Integer && 
+  if users_input.class == Integer &&
