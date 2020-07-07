@@ -24,7 +24,7 @@ def play(songs)
     song_number.push(index+1)
     song_name.push(item)
   end
-
+  binding.pry
   if song_number.include? (users_input) && users_input.class == Integer
     puts "Playing #{song_name[users_input-1]}"
   elsif song_name.include? (users_input) && users_input.class == String
