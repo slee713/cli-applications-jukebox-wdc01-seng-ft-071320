@@ -24,3 +24,13 @@ def list(songs)
     puts "#{index +1}. #{item}"
   }
 end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  users_input = gets.strip
+  song_number =[]
+  songs.each do |index|
+    song_number+= (index+1)
+  end
+  binding.pry
+  if users_input.class == Integer && 
