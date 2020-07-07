@@ -34,7 +34,7 @@ def play(songs)
   songs.each_with_index {|item, index|
     song_number.push(index+1)
     song_name.push(item)
-    
+
   }
 
   # binding.pry
