@@ -34,16 +34,13 @@ def play(songs)
   songs.each_with_index {|item, index|
     song_number.push(index+1)
     song_name.push(item)
+    
   }
 
-  binding.pry
-  if users_input.is_a? Integer && song_number.include? users_input
+  # binding.pry
+  if users_input.class == Integer && song_number.include? users_input
     puts "Playing #{song_name[users.input-1]}"
-  else
-    puts "Invalid input, please try again"
-  end
-
-  if users_input.is_a? String && song_name.include? users_input
+  elsif users_input.class == String && song_name.include? users_input
     puts "Playing #{users_input}"
   else
     puts "Invalid input, please try again"
