@@ -35,3 +35,5 @@ def play(songs)
   end
   binding.pry
   if users_input.class == Integer &&
+  end
+end
