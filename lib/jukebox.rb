@@ -31,11 +31,10 @@ def play(songs)
   users_input = gets.strip
   song_number =[]
   song_name = []
-  songs.each_with_index {|item, index|
+  songs.each_with_index do |item, index|
     song_number.push(index+1)
     song_name.push(item)
-
-  }
+  end
 
   # binding.pry
   if users_input.class == Integer && song_number.include? users_input
@@ -45,5 +44,4 @@ def play(songs)
   else
     puts "Invalid input, please try again"
   end
-
 end
