@@ -39,7 +39,7 @@ def play(songs)
   binding.pry
   if users_input.is_a? Integer && song_number.include? users_input
     puts "Playing #{song_name[users.input-1]}"
-  end
+
   elsif users_input.is_a? String && song_name.include? users_input
     puts "Playing #{users_input}"
   end
