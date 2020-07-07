@@ -37,9 +37,9 @@ def play(songs)
   }
 
   binding.pry
-  if users_input.class == Integer && song_number.include? users_input
+  if users_input.is_a? Integer && song_number.include? users_input
     puts "Playing #{song_name[users.input-1]}"
-  elsif users_input.class == String && song_name.include? users_input
+  elsif users_input.is_a? String && song_name.include? users_input
     puts "Playing #{users_input}"
   else
     puts "Invalid input, please try again"
